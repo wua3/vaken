@@ -9,6 +9,9 @@ You will need [npm](https://github.com/npm/cli) as a package manager and build r
 Run `./scripts/install.sh` from the top level of the Vaken repository. Note that the variables in
 the new `.env` file will need to be changed to valid values.
 
+#### Or
+You can install docker and docker-compose
+
 **Installing MongoDB:**
 
 You will need a MongoDB instance running in order for the application to work correctly. We recommend using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) to set up a cluster. Another option is to [install MongoDB locally](https://www.mongodb.com/download-center/community) and run it.
@@ -17,8 +20,14 @@ In addition, we recommend getting [MongoDB Compass](https://www.mongodb.com/down
 
 ### Running the app:
 
+#### npm
 ```bash
 npm run dev # runs backend + frontend, both reloading on changes
+```
+#### Docker
+```bash
+docker-compose build
+docker-compose up # runs backend + frontend, both reloading on changes
 ```
 
 Now to go `localhost:8081` to see the page.
