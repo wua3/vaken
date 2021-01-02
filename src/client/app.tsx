@@ -9,7 +9,7 @@ import { AuthContext } from './contexts/AuthContext';
 import { useMeQuery } from './generated/graphql';
 import 'react-toastify/dist/ReactToastify.css';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 	${reset}
 
 	html, body, #App {
